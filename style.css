@@ -32,6 +32,11 @@ body {
   padding: 0 28px;
 }
 
+h1, h2, h3, .logo, .step-num {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 24;
+}
+
 h1, h2, h3 {
   font-family: var(--serif);
   font-weight: 500;
@@ -268,8 +273,6 @@ a { color: inherit; text-decoration: none; }
   background: var(--sand-dark);
 }
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
   font-size: 0.85rem;
   color: var(--brown-light);
 }
@@ -300,5 +303,5 @@ a { color: inherit; text-decoration: none; }
   .service-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 64px; }
   .hero-inner { padding-bottom: 90px; }
-  .footer-inner { flex-direction: column; gap: 6px; text-align: center; }
+  .footer-inner { text-align: center; }
 }
