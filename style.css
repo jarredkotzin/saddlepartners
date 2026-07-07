@@ -80,7 +80,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink);
 }
 
-.logo-mark { color: var(--rust); flex-shrink: 0; }
+.logo-mark { flex-shrink: 0; display: block; }
 
 .site-nav {
   display: flex;
