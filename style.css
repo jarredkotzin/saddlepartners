@@ -9,7 +9,7 @@
   --brown-light: #8C7863;
   --border: #DCCBAF;
   --max-width: 1080px;
-  --serif: "Fraunces", Georgia, serif;
+  --serif: "Lora", Georgia, serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -30,11 +30,6 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 28px;
-}
-
-h1, h2, h3, .logo, .step-num {
-  font-optical-sizing: none;
-  font-variation-settings: "opsz" 24;
 }
 
 h1, h2, h3 {
@@ -199,8 +194,8 @@ a { color: inherit; text-decoration: none; }
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   margin-top: 56px;
   max-width: none;
 }
@@ -210,13 +205,40 @@ a { color: inherit; text-decoration: none; }
 }
 .step-num {
   display: block;
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  color: var(--brown-light);
-  margin-bottom: 8px;
+  font-family: var(--sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--rust);
+  margin-bottom: 10px;
 }
 .step h3 { margin-bottom: 8px; }
 .step p { font-size: 0.95rem; margin-bottom: 0; }
+.step-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.step-list li {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+  padding-left: 18px;
+  position: relative;
+}
+.step-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 9px;
+  height: 2px;
+  background: var(--rust);
+}
 
 /* Services */
 .services { padding: 100px 0; }
