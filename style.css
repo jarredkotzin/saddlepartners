@@ -144,7 +144,6 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
 }
 .hero-inner {
-  max-width: 760px;
   text-align: left;
   padding-bottom: 24px;
   position: relative;
@@ -189,7 +188,6 @@ a { color: inherit; text-decoration: none; }
 
 /* Belief section */
 .belief { padding: 40px 0 100px; background: var(--sand-dark); }
-.belief-inner { max-width: 720px; }
 .lede { font-size: 1.05rem; max-width: 640px; }
 
 .steps {
@@ -367,7 +365,6 @@ a { color: inherit; text-decoration: none; }
 
 /* Who section */
 .who { padding: 100px 0; background: var(--sand-dark); }
-.who-inner { max-width: 680px; }
 .tag-row {
   display: flex;
   flex-wrap: wrap;
