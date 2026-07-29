@@ -330,6 +330,16 @@ a { color: inherit; text-decoration: none; }
   height: 2px;
   background: var(--rust);
 }
+.case-study-list li a,
+.case-study-col p a {
+  color: var(--rust);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.case-study-list li a:hover,
+.case-study-col p a:hover {
+  color: var(--rust-dark);
+}
 .case-study-quote {
   background: var(--sand);
   border-radius: 14px;
