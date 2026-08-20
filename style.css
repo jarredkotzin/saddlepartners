@@ -2,7 +2,7 @@
   --navy: #1D4533;
   --slate: #526D82;
   --powder: #9DB2BF;
-  --ice: #F8F8EE;
+  --ice: #FBFBF4;
   --white: #FFFFFF;
   --border-light: #E2DED2;
   --border-dark: rgba(248, 248, 238, 0.16);
@@ -163,7 +163,7 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-primary {
   background: var(--navy);
-  color: var(--ice);
+  color: var(--white);
 }
 .btn-primary:hover { background: var(--slate); }
 .btn-ghost {
@@ -197,6 +197,11 @@ a { color: inherit; text-decoration: none; }
   min-height: calc(100svh - 133px);
   display: flex;
   align-items: center;
+}
+.hero h1 { color: #000000; }
+.hero h1 em {
+  font-style: italic;
+  color: #5E3122;
 }
 .hero-inner {
   text-align: left;
