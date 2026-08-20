@@ -108,9 +108,10 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
   z-index: 200;
   width: min(320px, 84vw);
+  height: 100vh;
+  height: 100dvh;
   background: var(--ice);
   display: flex;
   flex-direction: column;
