@@ -111,7 +111,6 @@ a { color: inherit; text-decoration: none; }
   max-height: calc(100dvh - 32px);
   background: var(--ice);
   border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px) scale(0.97);
@@ -389,11 +388,6 @@ a { color: inherit; text-decoration: none; }
   flex-direction: column;
   gap: 6px;
 }
-.form-field label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ice-muted);
-}
 .form-field input {
   background: transparent;
   border: none;
@@ -407,7 +401,7 @@ a { color: inherit; text-decoration: none; }
   outline: none;
   border-bottom-color: var(--ice);
 }
-.form-field input::placeholder { color: var(--slate); }
+.form-field input::placeholder { color: var(--ice-muted); }
 .inquiry-form .btn-primary {
   align-self: flex-start;
   margin-top: 12px;
@@ -423,13 +417,12 @@ a { color: inherit; text-decoration: none; }
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid var(--border-light);
   padding: 28px 0;
-  background: var(--white);
+  background: var(--navy);
 }
 .footer-inner {
   font-size: 0.85rem;
-  color: var(--slate);
+  color: var(--ice-muted);
 }
 
 /* Responsive */
