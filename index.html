@@ -18,37 +18,38 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="logo">
-      <img class="logo-mark" src="logo-mark.png" width="30" height="30" alt="">
-      <span>Saddle Partners</span>
-    </a>
-    <nav class="site-nav">
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/" class="logo">Saddle Partners</a>
+    <span class="header-spacer" aria-hidden="true"></span>
+  </div>
+</header>
+
+<div class="nav-overlay" id="nav-overlay">
+  <div class="wrap nav-overlay-inner">
+    <button class="nav-close" aria-label="Close menu">&times;</button>
+    <nav class="overlay-nav">
       <a href="/#approach">Approach</a>
       <a href="/#services">Services</a>
       <a href="/case-studies">Case studies</a>
       <a href="/#who">Who we serve</a>
-      <a href="/#contact" class="nav-cta">Get in touch</a>
+      <a href="/#contact">Get in touch</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
-</header>
+</div>
 
 <main id="top">
 
   <section class="hero">
     <div class="wrap hero-inner">
-      <h1>Your growth engine doesn't need more fuel.<br>It needs more horsepower.</h1>
+      <h1>Performance marketing for brands that care about performance.</h1>
       <p class="hero-sub">We help businesses build better performance marketing systems and get more out of their ad spend.</p>
       <div class="hero-actions">
         <a href="/#contact" class="btn btn-primary">Schedule a free consultation</a>
         <a href="/case-studies" class="btn btn-ghost">Case studies</a>
       </div>
     </div>
-    <svg class="horizon" viewBox="0 0 1440 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,120 L120,120 L160,70 L210,120 L420,120 L470,40 L520,90 L560,120 L820,120 L880,60 L940,110 L1000,120 L1230,120 L1290,55 L1350,120 L1440,120 L1440,160 L0,160 Z" fill="var(--ice)"/>
-    </svg>
   </section>
 
   <section class="belief" id="approach">
