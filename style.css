@@ -164,8 +164,9 @@ a { color: inherit; text-decoration: none; }
 .btn-primary {
   background: #333ED4;
   color: var(--white);
-  padding: 18px 36px;
-  font-size: 1.15rem;
+  padding: 16px 34px;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 .btn-primary:hover { background: #2831A8; }
 .btn-ghost {
