@@ -1,8 +1,8 @@
 :root {
   --navy: #1D4533;
   --slate: #526D82;
-  --powder: #9DB2BF;
   --ice: #FBFBF4;
+  --ice-muted: rgba(251, 251, 244, 0.68);
   --white: #FFFFFF;
   --border-light: #E2DED2;
   --border-dark: rgba(248, 248, 238, 0.16);
@@ -177,11 +177,11 @@ a { color: inherit; text-decoration: none; }
 
 /* Dark-section modifier */
 .section-dark { background: var(--navy); color: var(--ice); }
-.section-dark .stitch-label { color: var(--powder); border-bottom-color: var(--border-dark); }
-.section-dark .lede { color: var(--powder); }
+.section-dark .stitch-label { color: var(--ice-muted); border-bottom-color: var(--border-dark); }
+.section-dark .lede { color: var(--ice-muted); }
 .section-dark .step { border-top-color: var(--ice); }
-.section-dark .step-num { color: var(--powder); }
-.section-dark .step p { color: var(--powder); }
+.section-dark .step-num { color: var(--ice-muted); }
+.section-dark .step p { color: var(--ice-muted); }
 .section-dark .step-list li { color: var(--ice); }
 .section-dark .step-list li::before { background: var(--ice); }
 .section-dark .tag {
@@ -387,7 +387,7 @@ a { color: inherit; text-decoration: none; }
 .form-field label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--powder);
+  color: var(--ice-muted);
 }
 .form-field input {
   background: transparent;
@@ -413,7 +413,7 @@ a { color: inherit; text-decoration: none; }
 .form-status {
   margin: 16px 0 0;
   font-size: 0.9rem;
-  color: var(--powder);
+  color: var(--ice-muted);
 }
 
 /* Footer */
