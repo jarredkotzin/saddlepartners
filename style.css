@@ -288,6 +288,7 @@ a { color: inherit; text-decoration: none; }
   .cta-inner { grid-template-columns: 1fr; gap: 40px; }
   .cta-visual { align-items: center; }
   .cta-caption { white-space: normal; }
+  .desktop-break { display: none; }
 }
 
 @media (max-width: 680px) {
