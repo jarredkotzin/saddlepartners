@@ -1,5 +1,5 @@
 :root {
-  --navy: #1D4533;
+  --navy: #000000;
   --section-bg: var(--ice);
   --slate: #526D82;
   --ice: #FBFBF4;
@@ -178,14 +178,14 @@ a { color: inherit; text-decoration: none; }
   border-color: var(--slate);
   color: var(--navy);
 }
-.btn-ghost:hover { border-color: var(--navy); background: rgba(29, 69, 51, 0.06); }
+.btn-ghost:hover { border-color: var(--navy); background: rgba(0, 0, 0, 0.06); }
 
 /* Section background */
 .section-dark { background: var(--section-bg); color: var(--navy); }
 .section-dark .stitch-label { color: var(--slate); border-bottom-color: var(--border-light); }
 .section-dark .lede { color: var(--slate); }
 .section-dark .btn-ghost { border-color: var(--slate); color: var(--navy); }
-.section-dark .btn-ghost:hover { border-color: var(--navy); background: rgba(29, 69, 51, 0.06); }
+.section-dark .btn-ghost:hover { border-color: var(--navy); background: rgba(0, 0, 0, 0.06); }
 
 /* Hero */
 .hero {
@@ -250,18 +250,18 @@ a { color: inherit; text-decoration: none; }
 .belief-icon-solo {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 288px;
   height: auto;
 }
 .belief-visual .cta-caption-row { align-self: flex-start; margin-top: 4px; }
 .belief-text { text-align: right; }
-.belief-text .lede { margin: 0 0 0 auto; }
+.belief-text .lede { margin: 0 0 0 auto; color: #000000; }
 
 /* CTA */
 .cta { padding: 110px 0; }
 .cta-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.5fr 0.5fr;
   align-items: center;
   gap: 56px;
 }
@@ -292,6 +292,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--slate);
   font-size: 0.85rem;
   margin: 0;
+  white-space: nowrap;
 }
 
 /* Contact form */
@@ -303,7 +304,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 24px;
 }
 .contact-form h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); }
-.contact-form .lede { margin: 0 auto 56px; font-size: 1.25rem; color: var(--slate); }
+.contact-form .lede { margin: 0 auto 56px; font-size: 1.25rem; color: #000000; }
 .inquiry-form {
   max-width: 600px;
   margin: 0 auto;
