@@ -189,11 +189,6 @@ a { color: inherit; text-decoration: none; }
 .section-dark .step p { color: var(--ice-muted); }
 .section-dark .step-list li { color: var(--ice); }
 .section-dark .step-list li::before { background: var(--ice); }
-.section-dark .tag {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.25);
-  color: var(--ice);
-}
 .section-dark .btn-primary { background: var(--ice); color: var(--navy); }
 .section-dark .btn-primary:hover { background: var(--white); }
 .section-dark .btn-ghost { border-color: rgba(255, 255, 255, 0.4); color: var(--ice); }
@@ -319,22 +314,6 @@ a { color: inherit; text-decoration: none; }
 .service-card p { font-size: 0.92rem; margin-bottom: 0; color: var(--slate); }
 
 /* Who section */
-.who { padding: 100px 0; }
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-.tag {
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: var(--white);
-  border: 1px solid var(--border-light);
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: var(--slate);
-}
 
 /* CTA */
 .cta { padding: 110px 0; }

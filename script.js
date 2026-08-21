@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!toggle || !overlay) return;
 
   const openOverlay = () => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     overlay.classList.add('open');
     if (scrim) scrim.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) document.body.style.paddingRight = scrollbarWidth + 'px';
   };
 
   const closeOverlay = () => {
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (scrim) scrim.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
   };
 
   toggle.addEventListener('click', () => {
