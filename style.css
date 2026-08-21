@@ -238,10 +238,11 @@ a { color: inherit; text-decoration: none; }
 .lede { font-size: 1.05rem; max-width: 640px; color: var(--slate); }
 .belief-inner {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 56px;
 }
+.solutions-inner { grid-template-columns: 0.9fr 1.1fr; }
 .belief-visual {
   display: flex;
   flex-direction: column;
@@ -254,8 +255,10 @@ a { color: inherit; text-decoration: none; }
   height: auto;
 }
 .belief-visual .cta-caption-row { align-self: flex-start; margin-top: 4px; }
-.belief-text { text-align: right; }
-.belief-text .lede { margin: 0 0 0 auto; color: #000000; }
+.belief-text .lede { color: #000000; }
+#approach .belief-text { text-align: left; }
+.solutions .belief-text { text-align: right; }
+.solutions .belief-text .lede { margin: 0 0 0 auto; }
 
 /* CTA */
 .cta { padding: 110px 0; }
