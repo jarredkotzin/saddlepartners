@@ -35,8 +35,8 @@ body {
 h1, h2, h3 {
   font-family: var(--sans);
   font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
   margin: 0 0 0.5em;
   color: inherit;
 }
@@ -375,14 +375,21 @@ a { color: inherit; text-decoration: none; }
 
 /* Contact form */
 .contact-form { padding: 110px 0; text-align: center; }
-.contact-form .lede { margin: 0 auto 48px; }
+.contact-icon {
+  display: block;
+  width: min(160px, 40%);
+  height: auto;
+  margin: 0 auto 24px;
+}
+.contact-form h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); }
+.contact-form .lede { margin: 0 auto 56px; font-size: 1.25rem; color: var(--ice); }
 .inquiry-form {
-  max-width: 520px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 34px;
 }
 .form-field {
   display: flex;
@@ -393,27 +400,29 @@ a { color: inherit; text-decoration: none; }
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 8px 2px;
+  padding: 12px 2px;
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--ice);
 }
 .form-field input:focus {
   outline: none;
   border-bottom-color: var(--ice);
 }
-.form-field input::placeholder { color: var(--ice-muted); }
+.form-field input::placeholder { color: var(--ice); }
 .inquiry-form .btn-primary {
   align-self: flex-start;
   margin-top: 12px;
+  padding: 16px 34px;
+  font-size: 1.15rem;
   background: #333ED4;
   color: var(--white);
 }
 .inquiry-form .btn-primary:hover { background: #2831A8; }
 .form-status {
   margin: 16px 0 0;
-  font-size: 0.9rem;
-  color: var(--ice-muted);
+  font-size: 1rem;
+  color: var(--ice);
 }
 
 /* Footer */
