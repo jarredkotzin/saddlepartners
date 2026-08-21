@@ -1,6 +1,6 @@
 :root {
   --navy: #1D4533;
-  --section-bg: #78A4CB;
+  --section-bg: var(--ice);
   --slate: #526D82;
   --ice: #FBFBF4;
   --ice-muted: rgba(251, 251, 244, 0.68);
@@ -180,14 +180,12 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-ghost:hover { border-color: var(--navy); background: rgba(29, 69, 51, 0.06); }
 
-/* Dark-section modifier */
-.section-dark { background: var(--section-bg); color: var(--ice); }
-.section-dark .stitch-label { color: var(--ice-muted); border-bottom-color: var(--border-dark); }
-.section-dark .lede { color: var(--ice-muted); }
-.section-dark .btn-primary { background: var(--ice); color: var(--navy); }
-.section-dark .btn-primary:hover { background: var(--white); }
-.section-dark .btn-ghost { border-color: rgba(255, 255, 255, 0.4); color: var(--ice); }
-.section-dark .btn-ghost:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); }
+/* Section background */
+.section-dark { background: var(--section-bg); color: var(--navy); }
+.section-dark .stitch-label { color: var(--slate); border-bottom-color: var(--border-light); }
+.section-dark .lede { color: var(--slate); }
+.section-dark .btn-ghost { border-color: var(--slate); color: var(--navy); }
+.section-dark .btn-ghost:hover { border-color: var(--navy); background: rgba(29, 69, 51, 0.06); }
 
 /* Hero */
 .hero {
@@ -236,51 +234,28 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Approach section */
-.belief { padding: 100px 0; text-align: center; }
+.belief { padding: 110px 0; }
 .lede { font-size: 1.05rem; max-width: 640px; color: var(--slate); }
-.belief-inner { max-width: 1220px; }
-.belief-grid {
+.belief-inner {
   display: grid;
-  grid-template-columns: 1fr 1.3fr 1fr;
-  gap: 48px;
-  align-items: start;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 56px;
 }
-.belief-block h2 {
-  max-width: none;
-  font-weight: 400;
-  line-height: 1.45;
-}
-.belief-block:not(.belief-block-wide) h2 {
-  max-width: 14ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-.belief-grid > .belief-block:nth-child(3) h2 { max-width: 17ch; }
-.belief-icon-wrap {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 240px;
-  margin-bottom: 28px;
-}
-.belief-block-wide {
+.belief-visual {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.belief-block-wide h2 { order: 1; margin: 0 0 28px; }
-.belief-block-wide .belief-icon-wrap {
-  order: 2;
-  height: auto;
-  align-items: center;
-  margin-bottom: 0;
-}
-.belief-icon {
+.belief-icon-solo {
   display: block;
-  width: min(220px, 65%);
+  width: 100%;
+  max-width: 360px;
   height: auto;
 }
-.belief-block-wide .belief-icon { width: min(220px, 55%); }
+.belief-visual .cta-caption-row { align-self: flex-start; margin-top: 4px; }
+.belief-text { text-align: right; }
+.belief-text .lede { margin: 0 0 0 auto; }
 
 /* CTA */
 .cta { padding: 110px 0; }
@@ -328,7 +303,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 24px;
 }
 .contact-form h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); }
-.contact-form .lede { margin: 0 auto 56px; font-size: 1.25rem; color: var(--ice); }
+.contact-form .lede { margin: 0 auto 56px; font-size: 1.25rem; color: var(--slate); }
 .inquiry-form {
   max-width: 600px;
   margin: 0 auto;
@@ -345,17 +320,17 @@ a { color: inherit; text-decoration: none; }
 .form-field input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid var(--border-light);
   padding: 12px 2px;
   font-family: var(--sans);
   font-size: 1rem;
-  color: var(--ice);
+  color: var(--navy);
 }
 .form-field input:focus {
   outline: none;
-  border-bottom-color: var(--ice);
+  border-bottom-color: var(--navy);
 }
-.form-field input::placeholder { color: var(--ice); }
+.form-field input::placeholder { color: var(--slate); }
 .inquiry-form .btn-primary {
   align-self: flex-start;
   margin-top: 12px;
@@ -368,7 +343,7 @@ a { color: inherit; text-decoration: none; }
 .form-status {
   margin: 16px 0 0;
   font-size: 1rem;
-  color: var(--ice);
+  color: var(--navy);
 }
 
 /* Footer */
@@ -378,12 +353,12 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-inner {
   font-size: 0.85rem;
-  color: var(--ice-muted);
+  color: var(--slate);
 }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .belief-grid { grid-template-columns: 1fr; gap: 48px; }
+  .belief-inner { grid-template-columns: 1fr; gap: 40px; }
   .cta-inner { grid-template-columns: 1fr; gap: 40px; }
   .cta-visual { align-items: flex-start; }
   .cta-caption-row { align-self: flex-start; }
