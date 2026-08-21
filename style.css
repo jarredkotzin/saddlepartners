@@ -281,9 +281,13 @@ a { color: inherit; text-decoration: none; }
   .belief-inner { grid-template-columns: 1fr; gap: 40px; }
   .solutions .belief-text { order: 1; }
   .solutions .belief-visual { order: 2; }
+  #approach .belief-text,
+  .solutions .belief-text,
+  .cta-text {
+    text-align: center;
+  }
   .cta-inner { grid-template-columns: 1fr; gap: 40px; }
-  .cta-visual { align-items: flex-start; }
-  .cta-caption-row { align-self: flex-start; }
+  .cta-visual { align-items: center; }
 }
 
 @media (max-width: 680px) {
